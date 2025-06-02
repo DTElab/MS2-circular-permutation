@@ -73,7 +73,7 @@ ms2_CPCP_protein = ('ASNFTQFVLVDNGGTGDVTVAPSNFANGVAEWISSNSRSQAYKVTCS' +
                      'IKVEVPKVATQTVGGVELPVAAWRSYLNMELTIPIFATNSDCELIVK' +
                      'AMQGLLKDGNPIPSAIAANSGIY')
 
-num_AAs = len(ms2_CPCP)
+num_AAs = len(ms2_CP)
 
 # define dictionary of codons to amino acids in order of AAs keys
 codons_to_AAs = {'GCT': 'A', 'GCG': 'A', 'GCA': 'A', 'GCC': 'A',
