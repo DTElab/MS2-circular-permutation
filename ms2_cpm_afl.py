@@ -174,7 +174,6 @@ def seq_correction(po_lst, dna_lst):
     CPM positions will be omitted if there is a misalignment to the reference sequences.'''
     corrected_po_lst = []
     initial_len = len(dna_lst)
-    ms2_monomer = ms2_CPCP_gene[0:395]
 
     for x in range(initial_len):
         dna_seq = dna_lst[x]
