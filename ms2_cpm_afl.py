@@ -21,7 +21,6 @@ This AFL heatmap generation is designed to use the read counts from the alignmen
 from google.colab import drive
 drive.mount('/content/drive')
 
-# Commented out IPython magic to ensure Python compatibility.
 import os
 import re
 import pandas as pd
@@ -41,8 +40,6 @@ import numpy as np
 import math
 import matplotlib.patches as mpatches
 import matplotlib.colors as colors
-
-# %matplotlib inline
 
 '''Define Sequence-Specific Variables'''
 # assign the reference gene as CP-CP
@@ -129,7 +126,7 @@ def parse_from_txt(file):
     '''This takes the aligned, merged file from terminal analysis. We first get rid of any genes that do not
     start with ATG and end with TAA. Then we append the resulting genes to a list.'''
     gene = ""
-    file_path = os.path.join('./Input .txt Files/SL CPM Library/', file+'.txt') #open and read the text file containing aligned library reads
+    file_path = os.path.join('/content/drive/My Drive/MS2/Input .txt Files/SL CPM Library/', file+'.txt') #open and read the text file containing aligned library reads
     txt_columns = ['QNAME','FLAG','RNAME','POS','MAPQ','CIGAR','MRNM','MPOS',
                    'ISIZE','SEQQuery','QUAL','1','2','3','4','5','6']
     reads_df = pd.read_table(file_path, header=None, names=txt_columns, on_bad_lines='skip')
